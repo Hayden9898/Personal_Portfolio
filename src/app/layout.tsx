@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Instrument_Serif } from "next/font/google";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -42,6 +43,7 @@ export default function RootLayout({
         className={`${instrumentSerif.variable} ${satoshi.variable} ${commitMono.variable} font-sans bg-bg text-primary antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
