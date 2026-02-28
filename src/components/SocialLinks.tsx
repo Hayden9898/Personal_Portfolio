@@ -25,7 +25,7 @@ const items = [
     icon: (s: number) => <SiX size={s} />,
   },
   {
-    label: "Email",
+    label: "Contact",
     href: `mailto:${socials.email}`,
     icon: (s: number) => (
       <svg width={s} height={s} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

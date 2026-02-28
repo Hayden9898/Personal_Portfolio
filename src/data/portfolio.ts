@@ -2,6 +2,7 @@ export const education = {
   school: "McMaster University",
   program: "Computer Science",
   logo: "https://brand.mcmaster.ca/app/uploads/2024/02/mcmaster-logo-2024-col.jpg",
+  schoolUrl: "https://www.mcmaster.ca/",
 };
 
 export const experience = [
@@ -37,12 +38,17 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Project Alpha",
-    githubUrl: "https://github.com",
+    //TODO, implement live demo video popout on scroll
+    name: "Cold Approach AI (WIP)",
+    githubUrl: "https://github.com/Hayden9898/ColdApproach-AI",
   },
   {
-    name: "Project Beta",
-    githubUrl: "https://github.com",
+    name: "SyllaScan",
+    githubUrl: "https://github.com/Hayden9898/SyllaScan",
+  },
+  {
+    name: "Melofy",
+    githubUrl: "https://github.com/ZananVirani/Melofy",
   },
 ];
 
