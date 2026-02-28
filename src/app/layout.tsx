@@ -27,7 +27,7 @@ const commitMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hayden | Portfolio",
+  title: "Hayden's Portfolio",
   description: "Personal portfolio of Hayden — Computer Science @ McMaster",
 };
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${instrumentSerif.variable} ${satoshi.variable} ${commitMono.variable} font-sans bg-bg text-bone antialiased`}
+        className={`${instrumentSerif.variable} ${satoshi.variable} ${commitMono.variable} font-sans bg-bg text-primary antialiased`}
       >
         {children}
       </body>

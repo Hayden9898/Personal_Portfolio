@@ -5,12 +5,12 @@ import { EASE_CINEMATIC } from "@/lib/motion";
 
 export function Hero() {
   return (
-    <section className="flex min-h-[75vh] items-center justify-center px-6">
+    <section className="flex items-center justify-center px-6 pt-8 pb-10">
       <motion.h1
-        className="font-serif text-5xl md:text-7xl lg:text-8xl text-bone text-center leading-tight"
-        initial={{ opacity: 0, y: 40 }}
+        className="font-serif text-3xl md:text-4xl text-primary text-center"
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, delay: 0.3, ease: EASE_CINEMATIC }}
+        transition={{ duration: 0.7, delay: 0.2, ease: EASE_CINEMATIC }}
       >
         Hey, my name is Hayden!
       </motion.h1>

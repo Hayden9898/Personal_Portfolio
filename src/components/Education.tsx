@@ -1,34 +1,34 @@
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { education } from "@/data/portfolio";
-import { SectionReveal } from "./SectionReveal";
+import { EASE_CINEMATIC } from "@/lib/motion";
 
 export function Education() {
   return (
-    <SectionReveal>
-      <section className="px-6 md:px-12 py-12 max-w-2xl mx-auto">
-        <div className="flex items-center gap-4">
-          {/* Graduation cap icon */}
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-amber shrink-0"
-          >
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-            <path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5" />
-          </svg>
-          <div>
-            <p className="text-bone font-medium text-lg">
-              {education.program}
-            </p>
-            <p className="text-ash text-sm">{education.school}</p>
-          </div>
-        </div>
-      </section>
-    </SectionReveal>
+    <motion.section
+      className="px-6 md:px-12 py-4 max-w-xl mx-auto"
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.35, ease: EASE_CINEMATIC }}
+    >
+      <h2 className="text-xs font-medium text-muted uppercase tracking-widest mb-3">
+        Education
+      </h2>
+      <div className="flex items-center gap-3">
+        <Image
+          src={education.logo}
+          alt={education.school}
+          width={28}
+          height={28}
+          className="rounded shrink-0 object-contain"
+        />
+        <p className="text-primary">
+          <span className="font-medium">{education.program}</span>
+          <span className="text-secondary"> @ {education.school}</span>
+        </p>
+      </div>
+    </motion.section>
   );
 }
