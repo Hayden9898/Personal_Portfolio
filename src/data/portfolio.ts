@@ -38,9 +38,9 @@ export const experience = [
 
 export const projects = [
   {
-    //TODO, implement live demo video popout on scroll
-    name: "Cold Approach AI (WIP)",
+    name: "Cold Approach AI",
     githubUrl: "https://github.com/Hayden9898/ColdApproach-AI",
+    liveUrl: "https://cold-approach-ai-self.vercel.app/onboarding",
   },
   {
     name: "SyllaScan",

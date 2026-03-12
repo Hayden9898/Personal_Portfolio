@@ -9,17 +9,20 @@ export function HoverRow({
   children,
   delay = 0,
 }: {
-  href: string;
+  href?: string;
   children: React.ReactNode;
   delay?: number;
 }) {
   const [hovered, setHovered] = useState(false);
 
+  const Wrapper = href ? "a" : "div";
+  const wrapperProps = href
+    ? { href, target: "_blank", rel: "noopener noreferrer" }
+    : {};
+
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Wrapper
+      {...wrapperProps}
       className="block w-full py-2.5 cursor-pointer group no-underline"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -42,6 +45,6 @@ export function HoverRow({
       >
         {children}
       </motion.div>
-    </a>
+    </Wrapper>
   );
 }
