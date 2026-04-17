@@ -11,28 +11,28 @@ export const experience = [
     company: "Trend Micro",
     companyUrl: "https://www.trendmicro.com/en_us/business.html",
     logo: "https://media.licdn.com/dms/image/v2/D560BAQFCDAQTrzAW6g/company-logo_200_200/B56Z0a2hJVJwAM-/0/1774271992729/trendai_security_logo?e=2147483647&v=beta&t=3jSM70gYJbXu6idgctsO_lGGJLjo1lXGWfILXfNQOyg",
-    period: "5/26 - Present",
+    period: "May 2026 — Present",
   },
   {
     role: "Software Engineer Intern",
     company: "Knockri",
     companyUrl: "https://knockri.com/",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQF3QZF--kiaNw/company-logo_200_200/company-logo_200_200/0/1656939991995/knockri_logo?e=2147483647&v=beta&t=LDAjtU-Fh01ofr9JfL8SaLSoYo_SnxfUGi_6hD_540Q",
-    period: "12/25 — 4/26",
+    period: "Dec 2025 — Apr 2026",
   },
   {
     role: "Software Engineer Intern",
     company: "Brighter Signals",
     companyUrl: "https://www.brightersignals.com/",
     logo: "https://pub-mediabox-storage.rxweb-prd.com/exhibitor/logo/exh-dedbdc16-bc98-405b-aeff-f7da208948e0/desktop-large/ba18b482-dfd0-4cb5-8bcb-fefd8b01852d.png",
-    period: "5/25 — 8/25",
+    period: "May 2025 — Aug 2025",
   },
   {
     role: "Software Engineer Intern",
     company: "Mana Immigration",
     companyUrl: "https://manaimmigration.com/",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQFsDgu4kOCK2w/company-logo_200_200/company-logo_200_200/0/1654876158815/manaimmigration_logo?e=2147483647&v=beta&t=dalPkd7RB59AdLJh-jZNkhxAN-csPVuZ2FpcXrlMz2U",
-    period: "5/24 — 8/24",
+    period: "May 2024 — Aug 2024",
   },
 ];
 
