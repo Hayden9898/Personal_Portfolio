@@ -24,28 +24,33 @@ export function Experience() {
             href={job.companyUrl}
             delay={0.45 + i * 0.1}
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-start gap-3">
               {job.logo ? (
                 <Image
                   src={job.logo}
                   alt={job.company}
                   width={28}
                   height={28}
-                  className="rounded shrink-0 object-contain"
+                  className="rounded shrink-0 object-contain mt-0.5"
                 />
               ) : (
-                <div className="w-7 h-7 rounded bg-surface-2 shrink-0 flex items-center justify-center">
+                <div className="w-7 h-7 rounded bg-surface-2 shrink-0 flex items-center justify-center mt-0.5">
                   <span className="text-xs text-secondary font-medium">
                     {job.company[0]}
                   </span>
                 </div>
               )}
-              <p className="text-primary text-sm flex items-center gap-2 flex-wrap">
-                <span className="font-medium">{job.role}</span>
-                <span className="text-link group-hover:text-link-hover text-xs border border-surface-3 group-hover:border-link/40 rounded-full px-2.5 py-0.5 transition-colors duration-300">
-                  @ {job.company}
+              <div className="flex flex-col">
+                <p className="text-primary text-sm flex items-center gap-2 flex-wrap">
+                  <span className="font-medium">{job.role}</span>
+                  <span className="text-link group-hover:text-link-hover text-xs border border-surface-3 group-hover:border-link/40 rounded-full px-2.5 py-0.5 transition-colors duration-300">
+                    @ {job.company}
+                  </span>
+                </p>
+                <span className="text-[11px] text-[#888] mt-0.5">
+                  {job.period}
                 </span>
-              </p>
+              </div>
             </div>
           </HoverRow>
         ))}
