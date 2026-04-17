@@ -8,10 +8,17 @@ export const education = {
 export const experience = [
   {
     role: "Software Engineer Intern",
+    company: "Trend Micro",
+    companyUrl: "https://www.trendmicro.com/en_us/business.html",
+    logo: "https://media.licdn.com/dms/image/v2/D560BAQFCDAQTrzAW6g/company-logo_200_200/B56Z0a2hJVJwAM-/0/1774271992729/trendai_security_logo?e=2147483647&v=beta&t=3jSM70gYJbXu6idgctsO_lGGJLjo1lXGWfILXfNQOyg",
+    period: "5/26 - Present",
+  },
+  {
+    role: "Software Engineer Intern",
     company: "Knockri",
     companyUrl: "https://knockri.com/",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQF3QZF--kiaNw/company-logo_200_200/company-logo_200_200/0/1656939991995/knockri_logo?e=2147483647&v=beta&t=LDAjtU-Fh01ofr9JfL8SaLSoYo_SnxfUGi_6hD_540Q",
-    period: "12/25 — Present",
+    period: "12/25 — 4/26",
   },
   {
     role: "Software Engineer Intern",
@@ -26,13 +33,6 @@ export const experience = [
     companyUrl: "https://manaimmigration.com/",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQFsDgu4kOCK2w/company-logo_200_200/company-logo_200_200/0/1654876158815/manaimmigration_logo?e=2147483647&v=beta&t=dalPkd7RB59AdLJh-jZNkhxAN-csPVuZ2FpcXrlMz2U",
     period: "5/24 — 8/24",
-  },
-  {
-    role: "Software Engineer Intern",
-    company: "Broadcast Fantasia",
-    companyUrl: "https://www.broadcastfantasia.com/",
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGtaWVh8FtRag/company-logo_200_200/company-logo_200_200/0/1660424940789?e=2147483647&v=beta&t=0zia80kmYBD_6HZjAdPfCFR5t6a_cWT9wpJ08hax7oo",
-    period: "1/24 — 4/24",
   },
 ];
 
