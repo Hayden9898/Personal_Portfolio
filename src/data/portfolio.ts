@@ -9,7 +9,7 @@ export const experience = [
   {
     role: "Software Engineer Intern",
     company: "Trend Micro",
-    companyUrl: "https://www.trendmicro.com/en_us/business.html",
+    companyUrl: "https://www.trendaisecurity.com/en/",
     logo: "https://media.licdn.com/dms/image/v2/D560BAQFCDAQTrzAW6g/company-logo_200_200/B56Z0a2hJVJwAM-/0/1774271992729/trendai_security_logo?e=2147483647&v=beta&t=3jSM70gYJbXu6idgctsO_lGGJLjo1lXGWfILXfNQOyg",
     period: "May 2026 — Present",
   },
