@@ -26,12 +26,17 @@ export function Education() {
             height={32}
             className="rounded shrink-0 object-contain"
           />
-          <p className="text-primary">
-            <span className="font-medium">{education.program}</span>
-            <span className="text-link group-hover:text-link-hover text-xs border border-surface-3 group-hover:border-link/40 rounded-full px-2.5 py-0.5 ml-2 inline-block transition-colors duration-300">
-              @ {education.school}
+          <div className="flex flex-col">
+            <p className="text-primary">
+              <span className="font-medium">{education.program}</span>
+              <span className="text-link group-hover:text-link-hover text-xs border border-surface-3 group-hover:border-link/40 rounded-full px-2.5 py-0.5 ml-2 inline-block transition-colors duration-300">
+                @ {education.school}
+              </span>
+            </p>
+            <span className="text-[11px] text-[#888] mt-0.5">
+              {education.expectedGraduation}
             </span>
-          </p>
+          </div>
         </div>
       </HoverRow>
     </motion.section>

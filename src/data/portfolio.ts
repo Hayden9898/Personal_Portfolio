@@ -3,6 +3,7 @@ export const education = {
   program: "Computer Science",
   logo: "https://brand.mcmaster.ca/app/uploads/2024/02/mcmaster-logo-2024-col.jpg",
   schoolUrl: "https://www.mcmaster.ca/",
+  expectedGraduation: "Expected Graduation 2027",
 };
 
 export const experience = [
