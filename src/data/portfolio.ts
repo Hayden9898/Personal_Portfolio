@@ -38,6 +38,11 @@ export const experience = [
 ];
 
 export const projects = [
+    {
+    name: "Proteus (Cuhacking 2nd overall, Best use of DigitalOcean)",
+    githubUrl: "https://github.com/SquaredPiano/proteus",
+    liveUrl: "https://proteus.198.211.109.125.sslip.io/"
+  },
   {
     name: "Cold Approach AI",
     githubUrl: "https://github.com/Hayden9898/ColdApproach-AI",
@@ -46,11 +51,7 @@ export const projects = [
   {
     name: "SyllaScan",
     githubUrl: "https://github.com/Hayden9898/SyllaScan",
-  },
-  {
-    name: "Melofy",
-    githubUrl: "https://github.com/ZananVirani/Melofy",
-  },
+  }
 ];
 
 export const socials = {
