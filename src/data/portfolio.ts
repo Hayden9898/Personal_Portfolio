@@ -7,6 +7,13 @@ export const education = {
 };
 
 export const experience = [
+    {
+    role: "Software Engineer Intern",
+    company: "Wealthsimple",
+    companyUrl: "https://www.wealthsimple.com/en-ca",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5MSAHnP6L0Rc2m1RwM7NQXU-sAxXkazF-11XUYZjcQ&s=10",
+    period: "Incoming Fall 2026",
+  },
   {
     role: "Software Engineer Intern",
     company: "Trend Micro",
