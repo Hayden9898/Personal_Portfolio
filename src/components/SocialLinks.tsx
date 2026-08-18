@@ -1,6 +1,6 @@
 import {
   SiGithub,
-  SiX,
+  // SiX,  // TEMP: unused while X is hidden
 } from "@icons-pack/react-simple-icons";
 import { socials } from "@/data/portfolio";
 
@@ -19,11 +19,12 @@ const items = [
       </svg>
     ),
   },
-  {
-    label: "X",
-    href: socials.x,
-    icon: (s: number) => <SiX size={s} />,
-  },
+  // TEMP: X hidden for now — uncomment to restore
+  // {
+  // label: "X",
+  // href: socials.x,
+  // icon: (s: number) => <SiX size={s} />,
+  // },
   {
     label: "Contact",
     href: `mailto:${socials.email}`,
