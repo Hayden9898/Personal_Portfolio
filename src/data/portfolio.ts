@@ -12,14 +12,14 @@ export const experience = [
   company: "Wealthsimple",
   companyUrl: "https://www.wealthsimple.com/en-ca",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5MSAHnP6L0Rc2m1RwM7NQXU-sAxXkazF-11XUYZjcQ&s=10",
-  period: "Incoming Fall 2026",
+  period: "Sep 2026 - Present",
   },
   {
     role: "Software Engineer Intern",
     company: "Trend Micro",
     companyUrl: "https://www.trendaisecurity.com/en/",
     logo: "https://media.licdn.com/dms/image/v2/D560BAQFCDAQTrzAW6g/company-logo_200_200/B56Z0a2hJVJwAM-/0/1774271992729/trendai_security_logo?e=2147483647&v=beta&t=3jSM70gYJbXu6idgctsO_lGGJLjo1lXGWfILXfNQOyg",
-    period: "May 2026 — Present",
+    period: "May 2026 — Aug 2026",
   },
   {
     role: "Software Engineer Intern",
