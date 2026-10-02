@@ -3,7 +3,7 @@ export const education = {
   program: "Computer Science",
   logo: "https://brand.mcmaster.ca/app/uploads/2024/02/mcmaster-logo-2024-col.jpg",
   schoolUrl: "https://www.mcmaster.ca/",
-  expectedGraduation: "Expected Graduation Dec 2027",
+  expectedGraduation: "Expected Graduation May 2028",
 };
 
 export const experience = [
@@ -45,15 +45,19 @@ export const experience = [
 ];
 
 export const projects = [
-    {
+  {
+    name: "WatchTower (HackTheNorth 2026 Winner)",
+    githubUrl: "https://github.com/Hayden9898/Hack-the-North-2026",
+    liveUrl: "https://devpost.com/software/cadify"
+  },
+  {
     name: "Proteus (Cuhacking 2nd overall, Best use of DigitalOcean)",
     githubUrl: "https://github.com/SquaredPiano/proteus",
-    liveUrl: "https://proteus.198.211.109.125.sslip.io/"
+    liveUrl: "https://devpost.com/software/proteus-v7iq43"
   },
   {
     name: "Cold Approach AI",
     githubUrl: "https://github.com/Hayden9898/ColdApproach-AI",
-    liveUrl: "https://cold-approach-ai-self.vercel.app/onboarding",
   },
   {
     name: "SyllaScan",
