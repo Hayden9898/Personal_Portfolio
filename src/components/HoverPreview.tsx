@@ -2,7 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useReducedMotion,
+  useSpring,
+} from "framer-motion";
 import { EASE_CINEMATIC } from "@/lib/motion";
 
 const WIDTH = 256;
@@ -26,6 +31,7 @@ export function HoverPreview({
   const x = useSpring(mouseX, FOLLOW_SPRING);
   const y = useSpring(mouseY, FOLLOW_SPRING);
   const fullyHidden = useRef(true);
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     if (visible) fullyHidden.current = false;
@@ -44,7 +50,7 @@ export function HoverPreview({
       );
       mouseX.set(targetX);
       mouseY.set(targetY);
-      if (fullyHidden.current) {
+      if (fullyHidden.current || reduceMotion) {
         x.jump(targetX);
         y.jump(targetY);
       }
@@ -52,12 +58,12 @@ export function HoverPreview({
 
     window.addEventListener("mousemove", handleMove);
     return () => window.removeEventListener("mousemove", handleMove);
-  }, [columnRef, mouseX, mouseY, x, y]);
+  }, [columnRef, reduceMotion, mouseX, mouseY, x, y]);
 
   return (
     <motion.div
       aria-hidden
-      className="fixed top-0 left-0 z-40 pointer-events-none pointer-coarse:hidden"
+      className="fixed top-0 left-0 z-40 pointer-events-none max-lg:hidden pointer-coarse:hidden"
       style={{ x, y, width: WIDTH, height: HEIGHT }}
     >
       <motion.div
@@ -66,7 +72,9 @@ export function HoverPreview({
         animate={
           visible
             ? { opacity: 1, scale: 1, filter: "blur(0px)" }
-            : { opacity: 0, scale: 0.92, filter: "blur(4px)" }
+            : reduceMotion
+              ? { opacity: 0 }
+              : { opacity: 0, scale: 0.92, filter: "blur(4px)" }
         }
         transition={{ duration: visible ? 0.4 : 0.25, ease: EASE_CINEMATIC }}
         onAnimationComplete={() => {
