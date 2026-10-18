@@ -10,20 +10,21 @@ import {
 } from "framer-motion";
 import { EASE_CINEMATIC } from "@/lib/motion";
 
-const WIDTH = 256;
-const HEIGHT = 133;
+const WIDTH = 344;
+const HEIGHT = 179;
 const CURSOR_OFFSET = 28;
+const CONTENT_GAP = 32;
 const EDGE_GAP = 16;
 const FOLLOW_SPRING = { stiffness: 220, damping: 28, mass: 0.6 };
 
 export function HoverPreview({
   images,
   activeIndex,
-  columnRef,
+  listRef,
 }: {
   images: { src: string; alt: string }[];
   activeIndex: number | null;
-  columnRef: React.RefObject<HTMLElement | null>;
+  listRef: React.RefObject<HTMLElement | null>;
 }) {
   const visible = activeIndex !== null;
   const mouseX = useMotionValue(0);
@@ -39,9 +40,13 @@ export function HoverPreview({
 
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {
-      const columnRight = columnRef.current?.getBoundingClientRect().right ?? 0;
+      const anchors = listRef.current?.querySelectorAll("[data-preview-anchor]") ?? [];
+      const contentRight = Math.max(
+        0,
+        ...Array.from(anchors, (el) => el.getBoundingClientRect().right)
+      );
       const targetX = Math.min(
-        Math.max(e.clientX + CURSOR_OFFSET, columnRight),
+        Math.max(e.clientX + CURSOR_OFFSET, contentRight + CONTENT_GAP),
         window.innerWidth - WIDTH - EDGE_GAP
       );
       const targetY = Math.min(
@@ -58,7 +63,7 @@ export function HoverPreview({
 
     window.addEventListener("mousemove", handleMove);
     return () => window.removeEventListener("mousemove", handleMove);
-  }, [columnRef, reduceMotion, mouseX, mouseY, x, y]);
+  }, [listRef, reduceMotion, mouseX, mouseY, x, y]);
 
   return (
     <motion.div
