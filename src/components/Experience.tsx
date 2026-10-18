@@ -1,15 +1,26 @@
 "use client";
 
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { experience } from "@/data/portfolio";
 import { EASE_CINEMATIC } from "@/lib/motion";
 import { HoverRow } from "./HoverRow";
+import { HoverPreview } from "./HoverPreview";
+
+const previews = experience.map((job) => ({
+  src: job.preview,
+  alt: `${job.company} website`,
+}));
 
 export function Experience() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
   return (
     <section className="py-4">
       <motion.h2
+        ref={headingRef}
         className="text-xs font-medium text-muted uppercase tracking-widest mb-3 max-w-xl mx-auto px-6 md:px-12"
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
@@ -17,12 +28,16 @@ export function Experience() {
       >
         Work
       </motion.h2>
-      <div className="flex flex-col gap-1">
+      <div
+        className="flex flex-col gap-1"
+        onMouseLeave={() => setActiveIndex(null)}
+      >
         {experience.map((job, i) => (
           <HoverRow
             key={`${job.role}-${job.company}`}
             href={job.companyUrl}
             delay={0.45 + i * 0.1}
+            onHover={() => setActiveIndex(i)}
           >
             <div className="flex items-start gap-3">
               {job.logo ? (
@@ -55,6 +70,11 @@ export function Experience() {
           </HoverRow>
         ))}
       </div>
+      <HoverPreview
+        images={previews}
+        activeIndex={activeIndex}
+        columnRef={headingRef}
+      />
     </section>
   );
 }

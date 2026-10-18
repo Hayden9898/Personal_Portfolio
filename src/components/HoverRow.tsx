@@ -8,10 +8,12 @@ export function HoverRow({
   href,
   children,
   delay = 0,
+  onHover,
 }: {
   href?: string;
   children: React.ReactNode;
   delay?: number;
+  onHover?: () => void;
 }) {
   const [hovered, setHovered] = useState(false);
 
@@ -24,7 +26,10 @@ export function HoverRow({
     <Wrapper
       {...wrapperProps}
       className="block w-full py-2.5 cursor-pointer group no-underline"
-      onMouseEnter={() => setHovered(true)}
+      onMouseEnter={() => {
+        setHovered(true);
+        onHover?.();
+      }}
       onMouseLeave={() => setHovered(false)}
     >
       <motion.div
