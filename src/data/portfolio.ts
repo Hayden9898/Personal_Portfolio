@@ -8,6 +8,14 @@ export const education = {
 
 export const experience = [
   {
+    role: "Software Engineer Intern",
+    company: "Shopify",
+    companyUrl: "https://www.shopify.com/",
+    logo: "/logos/shopify.webp",
+    period: "Incoming Winter 2027",
+    preview: "/previews/shopify.webp",
+  },
+  {
   role: "Software Engineer Intern",
   company: "Wealthsimple",
   companyUrl: "https://www.wealthsimple.com/en-ca",
