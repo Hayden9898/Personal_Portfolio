@@ -13,6 +13,7 @@ export const experience = [
   companyUrl: "https://www.wealthsimple.com/en-ca",
   logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5MSAHnP6L0Rc2m1RwM7NQXU-sAxXkazF-11XUYZjcQ&s=10",
   period: "Sep 2026 - Present",
+  preview: "/previews/wealthsimple.webp",
   },
   {
     role: "Software Engineer Intern",
@@ -20,6 +21,7 @@ export const experience = [
     companyUrl: "https://www.trendaisecurity.com/en/",
     logo: "https://media.licdn.com/dms/image/v2/D560BAQFCDAQTrzAW6g/company-logo_200_200/B56Z0a2hJVJwAM-/0/1774271992729/trendai_security_logo?e=2147483647&v=beta&t=3jSM70gYJbXu6idgctsO_lGGJLjo1lXGWfILXfNQOyg",
     period: "May 2026 — Aug 2026",
+    preview: "/previews/trend-ai.webp",
   },
   {
     role: "Software Engineer Intern",
@@ -27,6 +29,7 @@ export const experience = [
     companyUrl: "https://knockri.com/",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQF3QZF--kiaNw/company-logo_200_200/company-logo_200_200/0/1656939991995/knockri_logo?e=2147483647&v=beta&t=LDAjtU-Fh01ofr9JfL8SaLSoYo_SnxfUGi_6hD_540Q",
     period: "Dec 2025 — Apr 2026",
+    preview: "/previews/knockri.webp",
   },
   {
     role: "Software Engineer Intern",
@@ -34,6 +37,7 @@ export const experience = [
     companyUrl: "https://www.brightersignals.com/",
     logo: "https://pub-mediabox-storage.rxweb-prd.com/exhibitor/logo/exh-dedbdc16-bc98-405b-aeff-f7da208948e0/desktop-large/ba18b482-dfd0-4cb5-8bcb-fefd8b01852d.png",
     period: "May 2025 — Aug 2025",
+    preview: "/previews/brighter-signals.webp",
   },
   {
     role: "Software Engineer Intern",
@@ -41,6 +45,7 @@ export const experience = [
     companyUrl: "https://manaimmigration.com/",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQFsDgu4kOCK2w/company-logo_200_200/company-logo_200_200/0/1654876158815/manaimmigration_logo?e=2147483647&v=beta&t=dalPkd7RB59AdLJh-jZNkhxAN-csPVuZ2FpcXrlMz2U",
     period: "May 2024 — Aug 2024",
+    preview: "/previews/mana-immigration.webp",
   },
 ];
 
