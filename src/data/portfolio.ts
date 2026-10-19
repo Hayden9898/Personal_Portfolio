@@ -4,6 +4,7 @@ export const education = {
   logo: "https://brand.mcmaster.ca/app/uploads/2024/02/mcmaster-logo-2024-col.jpg",
   schoolUrl: "https://www.mcmaster.ca/",
   expectedGraduation: "Expected Graduation May 2028",
+  preview: "/previews/mcmaster.webp",
 };
 
 export const experience = [
